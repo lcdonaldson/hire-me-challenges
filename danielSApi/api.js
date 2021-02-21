@@ -54,6 +54,6 @@ const format = (mt) => {
     appendToDOM(pret, pet, fet, icet, ao);
 }
 
-api()
+api();
 
 
