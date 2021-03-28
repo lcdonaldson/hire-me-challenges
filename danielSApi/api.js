@@ -14,7 +14,8 @@ const appendToDOM = (a, b, c, d, e) => {
 };
 
 const api = () => {
-    axios.get('https://api.github.com/users/danielspofford/events')
+    const url = 'https://api.github.com/users/danielspofford/events';
+    axios.get(url)
     .then(response => {
         const type = response.data;
         const mapType = type.map(t => {return t.type});
